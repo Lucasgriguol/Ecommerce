@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', monospace;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+  background-image: url('pixel-pattern.png');
+  background-repeat: repeat;
+}
+
+.cabecera {
+  background-color: #111;
+  border-bottom: 4px double #00ff00;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.navegacion {
+  background-color: #000080;
+  display: inline-block;
+  border: 4px dotted #ff0000;
+  padding: 5px;
+}
+
+.navegacion ul {
+  list-style: none;
+  display: flex;
+}
+
+.navegacion ul li {
+  border-right: 3px dashed #00ff00;
+}
+
+.navegacion ul li:last-child {
+  border-right: none;
+}
+
+.navegacion ul li a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  border: 2px solid #00ff00;
+  text-transform: uppercase;
+}
+
+.navegacion ul li a:hover,
+.navegacion ul li a:focus {
+  background-color: #ffcc00;
+  color: #000;
+  border-color: #ff0000;
+}
+
+.bienvenida {
+  background-color: #222;
+  color: #ffcc00;
+  padding: 30px 10px;
+  margin: 20px;
+  border: 5px dashed #00ff00;
+  text-align: center;
+}
+
+.bienvenida h2 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 0 #ff0000;
+}
+
+.productos-destacados {
+  background-color: #111;
+  border: 5px double #00ff00;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.productos-destacados h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #ffcc00;
+  text-shadow: 2px 2px 0 #ff0000;
+  margin-bottom: 20px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-items: center;
+}
+
+.producto {
+  background-color: #222;
+  border: 3px solid #ffcc00;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.producto img {
+  width: 100%;
+  border: 2px solid #00ff00;
+}
+
+.producto h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-shadow: 1px 1px 0 #ff0000;
+}
+
+.descripcion {
+  font-size: 0.85rem;
+  margin: 8px 0;
+}
+
+.precio {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.agregar {
+  background-color: #00ff00;
+  color: #000;
+  border: 2px solid #ff0000;
+  padding: 10px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.agregar:hover,
+.agregar:focus {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.pie {
+  background-color: #1d1d1d;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  margin-top: 40px;
+  border-top: 5px dashed #00ff00;
+}
+
+.contacto {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #111;
+  border: 3px dashed #ffcc00;
+  font-family: 'Press Start 2P', monospace;
+  color: #ffcc00;
+  text-align: left;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.formulario label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffcc00;
+}
+
+.formulario input,
+.formulario textarea {
+  background-color: #222;
+  border: 3px solid #ffcc00;
+  color: #00ffff;
+  padding: 10px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+}
+
+.formulario button {
+  background-color: #ffcc00;
+  color: #000;
+  border: 3px solid #ff0000;
+  padding: 12px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.formulario button:hover,
+.formulario button:focus {
+  background-color: #ffaa00;
+}
