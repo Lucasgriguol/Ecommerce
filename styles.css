@@ -1,3 +1,6 @@
+/* ============================
+   RESET Y ESTILOS GENERALES
+   ============================ */
 * {
   margin: 0;
   padding: 0;
@@ -14,27 +17,29 @@ body {
   background-repeat: repeat;
 }
 
+/* ============================
+     CABECERA Y MENÚ
+     ============================ */
 .cabecera {
-  background-color: #111;
-  border-bottom: 4px double #00ff00;
+  position: relative;
   padding: 15px 0;
+  border-bottom: 4px double #00ff00;
+  background-color: #111;
   text-align: center;
+  /* Centra el menú */
 }
 
 .navegacion {
-  background-color: #000080;
   display: inline-block;
+  background-color: #000080;
   border: 4px dotted #ff0000;
-  padding: 5px;
+  padding: 5px 20px;
 }
 
 .navegacion ul {
   list-style: none;
   display: flex;
-}
-
-.navegacion ul li {
-  border-right: 3px dashed #00ff00;
+  gap: 8px;
 }
 
 .navegacion ul li:last-child {
@@ -59,6 +64,32 @@ body {
   border-color: #ff0000;
 }
 
+/* ============================
+     BOTÓN CARRITO
+     ============================ */
+.carrito {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #00ff00;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.carrito span {
+  font-size: 20px;
+}
+
+/* ============================
+     SECCIÓN DE BIENVENIDA
+     ============================ */
 .bienvenida {
   background-color: #222;
   color: #ffcc00;
@@ -73,6 +104,9 @@ body {
   text-shadow: 2px 2px 0 #ff0000;
 }
 
+/* ============================
+     PRODUCTOS DESTACADOS
+     ============================ */
 .productos-destacados {
   background-color: #111;
   border: 5px double #00ff00;
@@ -89,6 +123,9 @@ body {
   margin-bottom: 20px;
 }
 
+/* ============================
+     CATÁLOGO FLUIDO/RESPONSIVE
+     ============================ */
 .productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -146,23 +183,15 @@ body {
   color: #fff;
 }
 
-.pie {
-  background-color: #1d1d1d;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px;
-  font-size: 0.8rem;
-  margin-top: 40px;
-  border-top: 5px dashed #00ff00;
-}
-
+/* ============================
+     SECCIÓN DE CONTACTO
+     ============================ */
 .contacto {
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
   background-color: #111;
   border: 3px dashed #ffcc00;
-  font-family: 'Press Start 2P', monospace;
   color: #ffcc00;
   text-align: left;
 }
@@ -186,7 +215,6 @@ body {
   border: 3px solid #ffcc00;
   color: #00ffff;
   padding: 10px;
-  font-family: 'Press Start 2P', monospace;
   font-size: 12px;
 }
 
@@ -200,7 +228,6 @@ body {
   color: #000;
   border: 3px solid #ff0000;
   padding: 12px;
-  font-family: 'Press Start 2P', monospace;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
@@ -209,4 +236,17 @@ body {
 .formulario button:hover,
 .formulario button:focus {
   background-color: #ffaa00;
+}
+
+/* ============================
+     PIE DE PÁGINA
+     ============================ */
+.pie {
+  background-color: #1d1d1d;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  margin-top: 40px;
+  border-top: 5px dashed #00ff00;
 }
