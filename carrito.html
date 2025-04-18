@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrito – PS2 Retro Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header class="cabecera">
+        <nav class="navegacion">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./catalogo.html">Catálogo</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="./carrito.html" class="carrito">
+            <span>🛒</span>
+        </a>
+    </header>
+    <main>
+        <section class="carrito contenedor">
+            <h2>Tu Carrito</h2>
+            <p>Estos son los productos que agregaste:</p>
+            <div class="carrito-lista">
+                <button id="vaciar-carrito" class="vaciar-btn">Vaciar Carrito</button>
+                <!-- Aquí el JS inyecta los .item-carrito -->
+            </div>
+        </section>
+    </main>
+    <footer class="pie">
+        <p>© 2025 PS2 Retro Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
